@@ -1,0 +1,25 @@
+# VS Code ext: REST Client
+# https://marketplace.visualstudio.com/items?itemName=humao.rest-client
+
+@url=http://localhost:8000
+@mock-api=http://localhost:8010
+
+###
+
+GET {{url}}/rate
+
+###
+
+POST {{url}}/subscribe
+Content-Type: application/x-www-form-urlencoded
+
+email=abc@d
+
+###
+
+GET {{url}}/subs
+
+###
+
+# mock-api
+GET {{mock-api}}

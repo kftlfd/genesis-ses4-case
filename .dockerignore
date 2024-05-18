@@ -1,0 +1,11 @@
+.air
+.db-data
+.vscode
+
+Dockerfile
+*.env
+*.env-example
+*.toml
+*.rest
+*.yaml
+*.md

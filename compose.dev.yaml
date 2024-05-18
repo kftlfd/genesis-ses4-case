@@ -1,0 +1,15 @@
+services:
+  app:
+    environment:
+      - MODE=dev
+      - GIN_MODE=debug
+    profiles:
+      - app
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
+    profiles:
+      - adminer
